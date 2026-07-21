@@ -1,6 +1,5 @@
-import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { ThemeWrapper, Navbar, Footer } from './components';
+import { ThemeWrapper, Navbar, } from './components';
 import Landing from './pages/landing/Landing';
 import Dashboard from './pages/dashboard/Dashboard';
 import Maps from './pages/maps/Maps';
@@ -17,7 +16,7 @@ function App() {
             <Route path="/maps" element={<Maps />} />
           </Routes>
         </main>
-        <Footer />
+        {/* <Footer /> */}
       </ThemeWrapper>
     </Router>
   );

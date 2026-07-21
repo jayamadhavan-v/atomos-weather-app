@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { GlassCard } from './GlassCard';
 
 export function WeatherCard({ title, value, icon: Icon, description }) {

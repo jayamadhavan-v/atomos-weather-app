@@ -111,6 +111,7 @@ const normalizeWeatherData = (data) => {
 
   return {
     city: data?.name || data?.city?.name || data?.city || "",
+    coord: data?.coord || null,
     current: {
       temperature,
       humidity,
@@ -129,7 +130,7 @@ const normalizeWeatherData = (data) => {
 };
 
 export const useWeatherStore = create((set, get) => ({
-  city: "New York",
+  city: "Chennai",
   weatherData: null,
   hourlyForecast: [],
   loading: false,

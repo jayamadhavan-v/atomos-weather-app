@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Instagram, Mail, GithubIcon, LinkedinIcon, UserStar } from 'lucide-react';
+import { Instagram, GithubIcon, LinkedinIcon } from 'lucide-react';
 import Logo from '../assets/favicons.png';
 export function Footer() {
   return (
@@ -18,19 +18,20 @@ export function Footer() {
         <div className="flex gap-gutter text-on-surface-variant dark:text-outline font-body text-[16px]">
           <Link className="hover:text-primary dark:hover:text-primary-fixed transition-colors" to="/dashboard">Dashboard</Link>
           <Link className="hover:text-primary dark:hover:text-primary-fixed transition-colors" to="/maps">Maps</Link>
-          <Link className="hover:text-primary dark:hover:text-primary-fixed transition-colors" to="/features">Features</Link>
+
         </div>
         <div className="flex gap-gutter opacity-80 hover:opacity-100 transition-all">
-          <a href="#" className="text-on-surface hover:text-secondary transition-colors">
-            <UserStar size={20} />
 
-          </a>
-          
+
           <a href="https://github.com/jayamadhavan-v" target='_black' className="text-on-surface hover:text-secondary transition-colors">
             <GithubIcon size={20} />
           </a>
-          <a href="https://www.linkedin.com/in/jayamadhavan-v/"  target="_black"className="text-on-surface hover:text-secondary transition-colors">
+          <a href="https://www.linkedin.com/in/jayamadhavan-v/" target="_black" className="text-on-surface hover:text-secondary transition-colors">
             <LinkedinIcon size={20} />
+          </a>
+          <a href="#" className="text-on-surface hover:text-secondary transition-colors">
+            <Instagram size={20} />
+
           </a>
         </div>
       </div>
@@ -40,4 +41,3 @@ export function Footer() {
     </footer>
   );
 }
- 

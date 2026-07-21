@@ -15,13 +15,13 @@ import {
   CloudRain,
   Snowflake,
   CloudLightning,
-  Cloud
 } from 'lucide-react';
 import { motion } from 'framer-motion';
 import climateEarthGif from '../../assets/Climate Change Earth GIF.gif';
 import FloatingHeroCard from './FloatingHeroCard';
 import ExperienceItem from './ExperienceItem';
 import FeatureCard from './FeatureCard';
+import {Footer} from '../../components/Footer';
 
 export default function Landing() {
   // Premium animation presets
@@ -50,35 +50,6 @@ export default function Landing() {
     }
   };
 
-  const floatingCardMotion = {
-    initial: { opacity: 0, scale: 0.9 },
-    animate: (delay) => ({
-      opacity: 1,
-      scale: 1,
-      transition: {
-        delay,
-        duration: 1.5,
-        ease: [0.16, 1, 0.3, 1]
-      }
-    }),
-    hover: {
-      y: -10,
-      scale: 1.05,
-      transition: { duration: 0.4, ease: "easeOut" }
-    }
-  };
-
-  // Gentle perpetual float animation for hero cards
-  const floatAnim = {
-    animate: {
-      y: [0, -3, 0],
-      transition: {
-        duration: 4,
-        repeat: Infinity,
-        ease: "easeInOut"
-      }
-    }
-  };
 
   const constraintsRef = React.useRef(null);
 
@@ -274,6 +245,8 @@ export default function Landing() {
           </Link>
         </motion.div>
       </section>
+
+      <Footer />
     </div>
   );
 }

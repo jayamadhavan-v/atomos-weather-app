@@ -191,6 +191,7 @@ export default function Dashboard() {
                 <motion.div
                   key={`${forecast.time}-${index}`}
                   initial={{ opacity: 0, x: 22 }}
+                  whileHover={{ y: -6, scale: 1.02 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: 0.35 + index * 0.06, duration: 0.45, ease: [0.16, 1, 0.3, 1] }}
                 >
