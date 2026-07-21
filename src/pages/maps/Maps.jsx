@@ -21,7 +21,7 @@ L.Icon.Default.mergeOptions({
 export default function Maps() {
 
   const INDIA_CENTER = [20.5937, 78.9629];
-  const BASE_TILE_URL=import.meta.env.BASE_TILE_URL;
+  const BASE_TILE_URL=import.meta.env.BASE_TILE_URL||"https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png";
 
   return (
     <div className="w-full  mx-auto p-4 sm:p-6 lg:p-8 space-y-8 h-[100vh]">
